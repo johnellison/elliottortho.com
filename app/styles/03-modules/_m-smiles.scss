@@ -1,0 +1,36 @@
+.m-smiles {
+  @include grid-row();
+  margin-bottom: 1rem;
+}
+
+.m-smiles-description {
+  @include grid-column(12);
+
+  @media #{$medium-up} {
+    @include grid-column(8);
+    margin-top: 3.7rem;
+    &.even {
+      @include grid-column($columns: 8, $push: 4);
+    }
+  }
+}
+
+.m-smiles-photo {
+  @include grid-column(12);
+  
+  @media #{$medium-up} {
+    @include grid-column(4);
+    &.even {
+      @include grid-column($columns: 4, $pull: 8);
+    }
+  }
+  > img {
+   @include round;
+   height: 250px;
+   width: 250px;
+  }
+}
+
+.m-smiles-toggle {
+  font-size: 1.2rem;
+}

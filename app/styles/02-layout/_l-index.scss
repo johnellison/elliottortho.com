@@ -1,1 +1,145 @@
-// Put styling for index layout here
+.l-content-section {
+  &:not(.about) {
+    text-align: center;
+  }
+  padding: 1rem 0;
+  // border-bottom: 1px solid $body-font-color;
+
+  @media #{$medium-up} {
+    padding: 2rem 0;
+  }
+
+  @media #{$large-up} {
+    padding: 4rem 0;
+  }
+}
+
+.l-address-cta {
+  @media #{$medium-up} {
+    display: none;
+  }
+  padding: 0;
+}
+
+[data-magellan-expedition] {
+  background-color: #333;
+}
+
+.l-welcome-header, .l-welcome-video, .l-welcome-cta, .l-about-family-header {
+  @include grid-column(12);
+}
+
+.l-welcome {
+  margin-top: -10px;
+}
+
+.l-arrow {
+  @include grid-column(12);
+  text-align: center;
+  transition: 0.2s all ease-in-out;
+  margin-bottom: -1rem;
+  padding: 0;
+  &:hover {
+    transform: scale(1.1);
+  }
+   img {
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+  }
+}
+
+.l-welcome-video {
+  margin-bottom: $global-margin;
+}
+
+#about, #smiles {
+  background-color: $vapor;
+}
+
+.l-about-wrapper {
+  @include grid-row();
+  margin-bottom: 2rem;
+}
+
+.l-about-photo {
+  > img {
+  }
+  @include grid-column(12);
+  text-align: center;
+  @media #{$medium-up} {
+    @include grid-column(4);
+  }
+}
+
+.l-about-text {
+  @include grid-column(12);
+  text-align: center;
+  @media #{$medium-up} {
+    @include grid-column(8);
+    text-align: left;
+  }
+}
+
+.l-about-family, .l-about-resume {
+  display: none;
+}
+
+.l-about-resume-wrapper {
+  border: 2px solid $header-font-color;
+  border-radius: $global-radius;
+  padding: 2rem;
+  background-color: white;
+  margin-bottom: $global-margin;
+  h3 {
+    text-decoration: underline;
+  }
+  h4 {
+    font-weight: 600;
+  }
+  ul {
+    list-style: none;
+  }
+}
+
+.l-about-family-header, .l-about-resume-header {
+  text-align: center;
+}
+
+.l-about-resume-content {
+  @include grid-column(12);
+  text-align: left;
+}
+
+.l-services-header,
+.l-smiles-header,
+.l-stories-header,
+.l-testimonials-header {
+  @include grid-column(12);
+  margin-bottom: $global-margin;
+}
+
+.l-services-cta {
+  @include grid-column(12);
+  @include panel($bg: $body-font-color);
+  // border: 1px solid $primary-color;
+  border-radius: $global-radius;
+  margin-top: $global-margin;
+  @media #{$medium-up} {
+    @include grid-column($columns: 6, $center: true);
+  }
+}
+
+footer {
+  background-color: $header-font-color;
+  h3, h4, p {
+    color: white;
+  }
+}
+
+.l-website-credit {
+  @include grid-column(12);
+  margin-top: $global-margin;
+}
+
+

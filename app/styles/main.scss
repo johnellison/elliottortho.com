@@ -5,18 +5,41 @@
 @charset "UTF-8";
 
 // Global Foundation Settings
-@import "foundation/settings";
+@import "settings";
 
 // You can import only specific elements by adjusting the import below
-@import "foundation";
+@import "foundation/components/block-grid",
+        "foundation/components/buttons",
+        "foundation/components/forms",
+        "foundation/components/global",
+        "foundation/components/icon-bar",
+        "foundation/components/inline-lists",
+        "foundation/components/magellan",
+        "foundation/components/panels",
+        "foundation/components/icon-bar",
+        "foundation/components/side-nav",
+        "foundation/components/top-bar",
+        "foundation/components/type",
+        "foundation/components/visibility";
 
 //01-base
+@import "01-base/config";
 
 //02-layout
+@import "02-layout/l-index";
 
 //03-modules
+@import "03-modules/m-top-bar";
+@import "03-modules/m-arrow";
+@import "03-modules/m-mobile-quick-bar";
+@import "03-modules/m-about";
+@import "03-modules/m-service";
+@import "03-modules/m-smiles";
+@import "03-modules/m-stories";
+@import "03-modules/m-testimonial";
 
 //04-states
+@import "04-state/s-view-more";
 
 //05-themes
 

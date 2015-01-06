@@ -1,0 +1,18 @@
+.m-service {
+  @include grid-column(12);
+
+  @media (min-width: 960px) {
+    @include grid-column(6);
+    margin-bottom: $global-margin;
+  }
+  @media #{$large-up} {
+    @include grid-column(3);
+  }
+}
+
+.m-service-icon {
+  @include round;
+  width: 250px;
+  height: 250px;
+  background-size: 250px 250px;
+}

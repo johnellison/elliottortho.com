@@ -1,0 +1,16 @@
+.m-about-family {
+  @include grid-column(12);
+  margin-bottom: 2rem;
+  @media #{$medium-up} {
+    @include grid-column(6);
+  }
+}
+
+.m-about-button {
+  @include button($bg: #fff, $radius: 50px);
+  border: 2px solid $primary-color;
+  &:hover {
+    background-color: $primary-color;
+    color: white;
+  }
+}

@@ -1,0 +1,25 @@
+.m-testimonial-wrapper {
+  @include grid-row();
+  margin-bottom: $global-margin;
+}
+
+.m-testimonial-text {
+  @include grid-column(12);
+  margin-top: 3rem;
+  & p {
+    font-size: 1.2rem;
+  }
+  @media #{$medium-up} {
+    @include grid-column(8);
+  }
+}
+
+.m-testimonial-photo {
+  @include grid-column(12);
+  & img {
+    @include round;
+  }
+  @media #{$medium-up} {
+    @include grid-column(4);
+  }
+}

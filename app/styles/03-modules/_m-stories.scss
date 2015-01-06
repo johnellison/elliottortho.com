@@ -1,0 +1,12 @@
+.m-stories {
+  @include grid-column(12);
+  @media #{$small-up} {
+    margin-bottom: $global-margin;
+  }
+  @media #{$medium-up} {
+    @include grid-column(3);
+  }
+  > img {
+    @include round;
+  }
+}
