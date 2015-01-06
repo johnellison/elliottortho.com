@@ -137,9 +137,23 @@ footer {
   }
 }
 
+.l-footer-column {
+  @include grid-column(12);
+  @media #{$medium-up} {
+    @include grid-column(4);
+  }
+}
+.l-footer-awards {
+  margin-bottom: $global-margin;
+  > img {
+    margin-left: $global-margin;
+  }
+}
+
 .l-website-credit {
   @include grid-column(12);
   margin-top: $global-margin;
+  margin-bottom: -$global-margin;
 }
 
 

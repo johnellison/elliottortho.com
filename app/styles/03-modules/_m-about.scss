@@ -4,11 +4,15 @@
   @media #{$medium-up} {
     @include grid-column(6);
   }
+  > img {
+    margin-bottom: $global-margin;
+  }
 }
 
 .m-about-button {
   @include button($bg: #fff, $radius: 50px);
   border: 2px solid $primary-color;
+  margin-right: $global-margin;
   &:hover {
     background-color: $primary-color;
     color: white;
