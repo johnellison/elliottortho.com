@@ -1,0 +1,183 @@
+extends layout
+
+block content
+  section.l-welcome.l-content-section
+    .row
+      .l-welcome-header
+        hgroup
+          h1 Welcome to The Elliott Ortho Family
+          h4.subheader
+            em our smiles come from the heart
+    .row
+      .l-welcome-video
+        .video
+          img(src='http://placehold.it/500x333&text=Video')
+    .row
+      .l-arrow
+        a(href='#about')
+          img(src='images/down-arrow.svg', alt='scroll down to read more about dr elliott')
+  section#about.l-about.l-content-section
+    .l-about-wrapper
+      .l-about-photo
+        img(data-interchange='[images/dr-elliott.jpg, (default)], [images/dr-elliott@2x.jpg, (retina)]', src='images/dr-elliott.jpg', alt='dr richard elliott family orthodontist highlands ranch', width='250', height='250')
+        h2 Dr. Elliott
+      .l-about-text
+        h3 About Me
+        p.lead
+          | I love my job! After many years in the profession I still love what I do. I get to meet exceptional adults, great kids and beautiful families and then work with them to achieve a beautiful healthy smile.
+        p
+          | The motto of my practice is &quot;Our smiles come from the heart.&quot; The personal care that we share with each of our patients is to treat you like we would treat our own family.
+        p
+          | I believe ongoing postgraduate education is crucial to be a master of your craft. A strong educational background is necessary to decipher what will truly benefit each individual patient.
+        p.lead
+          a#resume.m-about-button.s-about-toggle(href='#') View My Resume
+          a#family.m-about-button.s-about-toggle(href='#') View Photos of My Family &amp; Me
+    .l-about-resume
+      .row
+        .l-about-resume-wrapper
+          .row
+            .l-about-resume-header
+              h3 Richard G. Elliott, D.D.S.
+          .row
+            .l-about-resume-content
+              h4 A Strong Educational Background
+              h6 Graduate Training:
+              ul
+                li University of Kansas - B.A. Zoology
+                li University of Missouri - Kansas City School of Dentistry
+                li
+                  ul
+                    li Two-year orthodontic residency
+              h6 Honor &amp; Awards
+              ul
+                li Phi Kappa Phi &mdash; National University Honor Society
+                li
+                  a(href='http://www.oku.org/', target='_blank') Omicron Kappa Upsilon
+                  |  - National Dental Honorary Society
+              h4 Meeting The Highest Standards of His Profession
+              h6 Postgraduate Training:
+              ul
+                li
+                  | Consistently participates in all facets of orthodontics; current orthodontic surgery, temporomanibular joint disorders, infection control, OSHA compliance and practice management
+              h6 Member
+              ul
+                li
+                  a(href='https://www.aaoinfo.org/', target='_blank') American Association of Orthodontics
+                li
+                  a(href='http://rmso.org/', target='_blank') Rocky Mountain Society of Orthodontics
+                li
+                  a(href='http://www.ada.org/en/', target='_blank') American Dental Association
+                li
+                  a(href='http://mddsdentist.com/', target='_blank') Metropolitan Denver Dental Society
+                li Roth/Williams Functional Occlusion
+                li
+                  a(href='http://www.rwiso.org/', target='_blank') Roth/Williams International Society of Orthodontists
+                li
+                  a(href='https://www.cmda.org/', target='_blank') Christian Medical and Dental Society
+              h6 Practical Experience
+              ul
+                li Practicing orthodontist since 1974 and in Highlands Ranch since 1992
+                li Director of an orthodontic clinic in Lausanne, Switzerland
+                li Practiced in Frankfurt, Germany
+                li Was an orthodontic consultant at the University of Erlingen, Germany
+              h6 Commitment to Family and Community
+              ul
+                li
+                  em
+                    | &quot;I believe it is important to have a balance between family, office, and community. I am committed to giving back to others what many have given to me.&rdquo;
+                li
+                  | Married to Cindy for over 30 years with four wonderful children; Andrew, Alexander, Abigail and Aaron.
+                li
+                  | Very active in beautiful Colorado with camping, fishing, hiking, biking, skiing and hunting and kids&rsquo; school and sports.
+                li Coaches a junior bicycle race team and is a Boy Scout Leader.
+                li
+                  | Also active in church, local outreach, and Christian Medical/Dental mission trips.
+    .l-about-family
+      .row
+        .l-about-family-header
+          h3 Photos of My Family &amp; Me
+        .m-about-family
+          img(src='http://placehold.it/600x400', alt='')
+          img(src='http://placehold.it/600x400', alt='')
+        .m-about-family
+          img(src='http://placehold.it/600x400', alt='')
+          img(src='http://placehold.it/600x400', alt='')
+      .l-arrow
+        a(href='#services')
+          img(src='images/down-arrow.svg', alt="scroll down to see elliott ortho's services")
+    .row
+      .l-services-header
+        h2 Our Services
+        h4.subheader
+          | Our goal is to serve Highlands Ranch with dental health services. We offer care in the following areas:
+    .row
+      .m-service
+        img.m-service-icon(src='images/braces-icon.svg', alt='elliott orthodontics highlands ranch service name')
+        h3.m-service-name Braces
+        p.m-service-description
+          | We know that when people are looking for braces, what they&apos;re really looking for is a great smile. We serve patients from age seven to age 70 and pride ourselves on providing the highest quality of care. We listen to you and your needs and design our treatments to give you the very best orthodontics can provide.
+        p.s-view-more-paragraph
+          | Technology has advanced to make orthodontics more cosmetic, comfortable and efficient. If you&apos;re looking for clear, Invisalign-type or lingual braces, we would love to meet you and person for a free consultation and advise you on the best path to a great smile.
+        a.s-view-more-link(href='#') Read More...
+      .m-service
+        img.m-service-icon(src='images/tmj-icon.svg', alt='elliott orthodontics highlands ranch service name')
+        h3.m-service-name TMJ
+        p.m-service-description
+          | TMJ is a group of conditions that can cause pain in the jaw, neck, head and face. Many people suffer from these types of symptoms and go to one specialist after another in desperate need of a cure. Suprisingly, TMJ accounts for a large number of these painful symptoms.
+        p.s-view-more-paragraph
+          | The problem stems from jaw and the muscles that control jaw movement. Pain is a symptom of TMJ, not the problem itself. Diagnosing and correcting the problem is at the heart of TMJ treatment. If you&apos;re experiencing any of the pain mentioned above and think you might have TMJ, give us a call and we can talk about how we would approach diagnosis and treatment.
+        a.s-view-more-link(href='#') Read More...
+      .m-service
+        img.m-service-icon(src='images/snoring-icon.svg', alt='elliott orthodontics highlands ranch service name')
+        h3.m-service-name Snoring
+        p.m-service-description
+          | Snoring is often curable through a dental device which holds the lower jaw forward during sleep. We specially design solutions for each of our patients to help our patients stop snoring and get a better night sleep. A potentially life-threatening condition called sleep apnea can often accompany snoring...
+        p.s-view-more-paragraph
+          | Snoring by itself is easily treated and needs no medical workup. Snoring with sleep apnea is however dangerous and should be taken seriously. If you or your spouse have issues snoring, come visit us for a free consultation, we&apos;d love to help.
+        a.s-view-more-link(href='#') Read More...
+      .m-service
+        img.m-service-icon(src='images/surgery-icon.svg', alt='elliott orthodontics highlands ranch service name')
+        h3.m-service-name Surgery
+        p.m-service-description
+          | Braces are often all that is needed to achieve a great smile. Braces can correct the position of the teeth, as well as crowding and alignment. However, if the upper and lower jaw don&apos;t align properly, braces can&apos;t correct the whole problem. Sometimes surgery is the best solution and can achieve incredible results.
+        p.s-view-more-paragraph
+          | This is a sophisticated treatment that yields beautiful results. Proper diagnosis is necessary to provide the best treatment. We provide a free consultation to all, and would love to advise you on the best approach for your situation.
+        a.s-view-more-link(href='#') Read More...
+    .row
+      .l-services-cta
+        h4 Schedule Your Free Consultation
+        a.button(href='tel:3037914411')
+          | Call Now
+        p.lead (303) 791-4411
+    .row
+      .l-arrow
+        a(href='#smiles')
+          img(src='images/down-arrow.svg', alt='scroll down to see what makes an Elliott Smile')
+  section#smiles.l-content-section
+    .row
+      .l-smiles-header
+        h2 What Makes an Elliott Smile?
+        h4.subheader  When asked, "What makes a great smile" I realized the best way to answer was to share some of our family's smiles with you. Each of photos show smiles with specific characteristics that work together to form a full and beautiful smile. Take a look and see what kind of smiles we make here at Elliott Ortho.
+    .m-smiles
+      .m-smiles-description
+        h3 Smile Fullness
+        p.lead Your smile should fill the space between your lips both vertically and horiztonally.   
+      .m-smiles-photo
+        img(src='http://placehold.it/250', alt='width of the arch example')
+    .m-smiles
+      .m-smiles-description.even
+        h3 Smile Line
+        p.lead The edges of your upper front teeth should match the curvature of your lower lip.
+      .m-smiles-photo.even
+        img(src='http://placehold.it/250', alt='pitch of front teeth example')
+    .m-smiles
+      .m-smiles-description
+        h3 Matching Bite
+        p
+          | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam praesentium ut quis nulla tempora eaque quo.
+      .m-smiles-photo
+        img(data-interchange="[images/elliott-smile-son-biking.jpg, (default)], [images/elliott-smile-son-biking@2x.jpg, (retina)]" alt='Dr Elliott of Highlands Ranch and his son biking')
+        noscript
+          img(src='images/elliott-smile-son-biking.jpg', alt='pitch of front teeth example', width="250" height="250")
+  
+    

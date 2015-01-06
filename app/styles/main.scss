@@ -1,0 +1,33 @@
+// bower:scss
+// endbower
+
+// Make sure the charset is set appropriately
+@charset "UTF-8";
+
+// Global Foundation Settings
+@import "foundation/settings";
+
+// You can import only specific elements by adjusting the import below
+@import "foundation";
+
+//01-base
+
+//02-layout
+
+//03-modules
+
+//04-states
+
+//05-themes
+
+//debug
+// @import "01-base/debug";
+
+
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}

@@ -1,0 +1,42 @@
+doctype html
+html(lang='')
+  head
+    meta(charset='utf-8')
+    meta(name='description', content='')
+    meta(name='viewport', content='width=device-width, initial-scale=1, minimal-ui')
+    title Gulp Webapp -- Foundation, Jade
+    // Place favicon.ico and apple-touch-icon.png in the root directory
+    // build:css styles/vendor.css
+    // bower:css
+    link(rel='stylesheet', href='../bower_components/foundation/css/foundation.css')
+    // endbower
+    // endbuild
+    // build:css styles/main.css
+    link(rel='stylesheet', href='styles/main.css')
+    // endbuild
+
+  body
+    //if lt IE 10
+      p.browsehappy
+        | You are using an 
+        strong outdated
+        |  browser. Please 
+        a(href='http://browsehappy.com/') upgrade your browser
+        |  to improve your experience.
+    
+    block content 
+      
+    // Google Analytics script here
+    // build:js scripts/vendor.js
+    // bower:js
+    script(src='../bower_components/modernizr/modernizr.js')
+    script(src='../bower_components/jquery/dist/jquery.js')
+    script(src='../bower_components/fastclick/lib/fastclick.js')
+    script(src='../bower_components/jquery.cookie/jquery.cookie.js')
+    script(src='../bower_components/jquery-placeholder/jquery.placeholder.js')
+    script(src='../bower_components/foundation/js/foundation.js')
+    // endbower
+    // endbuild
+    // build:js scripts/main.js
+    script(src='scripts/main.js')
+    // endbuild
