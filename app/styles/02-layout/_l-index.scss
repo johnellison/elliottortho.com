@@ -51,6 +51,14 @@
 
 .l-welcome-video {
   margin-bottom: $global-margin;
+  @include grid-column($columns:12, $center: true);
+  text-align: center;
+  padding: 0;
+}
+
+#wistia_6cfzqtemme {
+  display: block;
+  margin: 0 auto;
 }
 
 #about, #smiles {
