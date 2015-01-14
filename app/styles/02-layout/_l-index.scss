@@ -2,11 +2,11 @@
   &:not(.about) {
     text-align: center;
   }
-  padding: 1rem 0;
+  padding: 2rem 0;
   // border-bottom: 1px solid $body-font-color;
 
   @media #{$medium-up} {
-    padding: 2rem 0;
+    padding: 3rem 0;
   }
 
   @media #{$large-up} {
