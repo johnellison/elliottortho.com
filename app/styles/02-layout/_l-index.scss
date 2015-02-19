@@ -52,8 +52,18 @@
 .l-welcome-video {
   margin-bottom: $global-margin;
   @include grid-column($columns:12, $center: true);
+  @media #{$medium-up} {
+    @include grid-column($columns:8, $center: true);
+  }
+  @media #{$large-up} {
+    @include grid-column($columns:7, $center: true);
+  }
   text-align: center;
   padding: 0;
+  > iframe {
+    width: 480px;
+    height: 270px;
+  }
 }
 
 #wistia_6cfzqtemme {
@@ -89,7 +99,7 @@
   }
 }
 
-.l-about-family, .l-about-resume {
+#family, #resume {
   display: none;
 }
 
@@ -127,6 +137,28 @@
   margin-bottom: $global-margin;
 }
 
+.l-story-content {
+  @include grid-column(12);
+  margin-bottom: $global-margin;
+  @media #{$medium-up} {
+    @include grid-column(4);
+  }
+
+  p {
+    text-align: left;
+  }
+
+  a {
+    // color: $body-font-color;
+  }
+
+  img {
+    @include round;
+    width: 150px;
+    height: 150px;
+  }
+}
+
 .l-services-cta {
   @include grid-column(12);
   @include panel($bg: $body-font-color);
@@ -153,7 +185,7 @@ footer {
 }
 .l-footer-awards {
   margin-bottom: $global-margin;
-  > img {
+  > a > img {
     margin-left: $global-margin;
   }
 }

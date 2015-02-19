@@ -1,0 +1,25 @@
+article.l-patient-story {
+  padding: 2rem 0;
+
+  @media #{$medium-up} {
+    padding: 3rem 0;
+  }
+
+  @media #{$large-up} {
+    padding: 4rem 0;
+  }
+}
+
+.l-patient-story-content {
+  @include grid-column($columns:12);
+  @media #{$medium-up} {
+    @include grid-column($columns: 10, $center: true);
+  }
+  @media #{$large-up} {
+    @include grid-column($columns: 8, $center: true)
+  }
+}
+
+.l-patient-story-header {
+  text-align: center;
+}

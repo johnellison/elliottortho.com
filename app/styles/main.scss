@@ -26,7 +26,8 @@
 @import "01-base/config";
 
 //02-layout
-@import "02-layout/l-index";
+@import "02-layout/l-index",
+        "02-layout/l-patient-story";
 
 //03-modules
 @import "03-modules/m-top-bar";

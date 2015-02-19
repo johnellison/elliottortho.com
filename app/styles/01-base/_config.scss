@@ -23,4 +23,14 @@ $global-margin: 2rem;
 button, .button {
   @include button($radius: 50px);
   margin-bottom: .25rem;
+  &.secondary {
+    @include button($bg: #fff, $radius: 50px);
+    // padding: .75rem 1.5rem;
+    border: 2px solid $primary-color;
+    &:hover {
+      background-color: $primary-color;
+      color: white;
+    }
+  }
 }
+

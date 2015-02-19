@@ -1,12 +1,7 @@
 .s-view-more-paragraph {
-  display: none;
+  // display: none;
 }
 
 .s-view-more-link {
-  @include button($bg: #fff, $radius: 50px);
-  border: 2px solid $primary-color;
-  &:hover {
-    background-color: $primary-color;
-    color: white;
-  }
+  display: none;
 }

@@ -5,16 +5,22 @@
     $(document).foundation();
 
     (function viewMore(){
-        $('.s-view-more-link').click(function(e){
+        var $viewMoreParagraph = $('.s-view-more-paragraph'); 
+        $viewMoreParagraph.css('display', 'none');
+
+        var $viewMoreLink = $('.s-view-more-link');
+        $viewMoreLink.css('display', 'inline-block');
+
+        $viewMoreLink.click(function(e){
           if(e.preventDefault) {
             e.preventDefault();
           } else {
-            e.returnValue = false;
+                      e.returnValue = false;
           }
     
           var $this = $(this);
     
-          $this.prev('.s-view-more-paragraph').slideDown(function(){
+          $this.prev($viewMoreParagraph).slideDown(function(){
             var $callNowNumber = $('<p>(303) 791-4411</p>');
             $this
               .after($callNowNumber)
@@ -30,6 +36,11 @@
           $resumeButton = $('#resume'),
           $resumeContainer = $('.l-about-resume'),
           $familyContainer = $('.l-about-family');
+
+      $resumeContainer.css('display', 'none');
+      $familyContainer.css('display', 'none');
+      $familyButton.css('display', 'inline-block');
+      $resumeButton.css('display', 'inline-block');
 
         $familyButton.click(function(e){
         e.preventDefault();
