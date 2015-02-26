@@ -1,5 +1,6 @@
 # robotstxt.org/
 
 User-agent: * 
-Disallow: /
-Sitemap: http://app.wistia.com/sitemaps/60649.xml: 
+Disallow: 
+Sitemap: http://elliottortho.com/sitemap.xml
+Sitemap: http://app.wistia.com/sitemaps/60649.xml

@@ -47,6 +47,10 @@
     height: 40px;
     margin: 0 auto;
   }
+
+  @media #{$small-only} {
+    display: none;
+  }
 }
 
 .l-welcome-video {
@@ -71,7 +75,7 @@
   margin: 0 auto;
 }
 
-#about, #smiles {
+#about, #services {
   background-color: $vapor;
 }
 
@@ -95,6 +99,8 @@
   text-align: center;
   @media #{$medium-up} {
     @include grid-column(8);
+  }
+  p {
     text-align: left;
   }
 }
@@ -137,6 +143,12 @@
   margin-bottom: $global-margin;
 }
 
+.l-story-wrapper {
+  @include grid-row();
+  margin-bottom: $global-margin;
+}
+
+
 .l-story-content {
   @include grid-column(12);
   margin-bottom: $global-margin;
@@ -172,9 +184,22 @@
 
 footer {
   background-color: $header-font-color;
-  h3, h4, p {
+  h3, h4, h5, h6, p, .lead  {
     color: white;
   }
+
+  .lead {
+    margin:0;
+  }
+
+  h4 {
+    margin-top: 1rem;
+  }
+
+  .button { 
+    margin-top: $global-margin;
+  }
+
 }
 
 .l-footer-column {
@@ -184,7 +209,7 @@ footer {
   }
 }
 .l-footer-awards {
-  margin-bottom: $global-margin;
+  margin: $global-margin 0;
   > a > img {
     margin-left: $global-margin;
   }

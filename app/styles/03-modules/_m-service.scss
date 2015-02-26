@@ -1,9 +1,14 @@
 .m-service {
   @include grid-column(12);
+  margin-bottom: $global-margin;
+
+  .m-service-description {
+    text-align: left;
+  }
 
   @media (min-width: 960px) {
     @include grid-column(6);
-    margin-bottom: $global-margin;
+
   }
   @media #{$large-up} {
     @include grid-column(3);

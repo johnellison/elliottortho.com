@@ -1,4 +1,4 @@
-footer.l-content-section
+footer.l-content-section#footer
   .row
     .l-footer-column
       h3 Trusted by Many
@@ -16,17 +16,21 @@ footer.l-content-section
       p.lead (303) 791-4411
     .l-footer-column
       h3 Contact Us
-      p
-        | 537 W Highlands Ranch Pkwy 
-        br
-        |                 Highlands Ranch, CO 80129 
-        br
-        |                 
+      div(itemscope itemtype="http://schema.org/Organization")
+        p.lead(itemprop="name") Elliott Orthodontics
+        p.lead(itemprop="address" itemscope itemtype="http://schema.org/PostalAddress")
+          span(itemprop="streetAddress")
+            | 537 W Highlands Ranch Pkwy 
+          br
+          span(itemprop="addressLocality")
+            | Highlands Ranch
+          | ,
+          span(itemprop="addressRegion")
+            |  CO  
+          | 80129                
         a(href='https://goo.gl/maps/CP9cN') Open in maps
-      p
-      h4 Email
-      p
-        a(href='mailto:newsmiles@elliottortho.com') newsmiles@elliottortho.com
+        h4 Email
+        a(href='mailto:newsmiles@elliottortho.com' itemprop="email") newsmiles@elliottortho.com
   .row
     .l-website-credit
       p.lead

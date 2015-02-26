@@ -8,3 +8,7 @@
   }
   
 }
+
+.top-bar-section li:not(.has-form) a:not(.button) {
+  padding: 0 .8rem;
+}

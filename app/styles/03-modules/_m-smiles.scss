@@ -1,10 +1,18 @@
 .m-smiles {
   @include grid-row();
-  margin-bottom: 1rem;
+  margin-bottom: $global-margin;
+  @media #{$medium-up} {
+    margin-bottom: 1rem;
+    text-align: left;
+  }
 }
 
 .m-smiles-description {
+  h3, p {
+    margin: 0;
+  }
   @include grid-column(12);
+  line-height: 1;
 
   @media #{$medium-up} {
     @include grid-column(8);

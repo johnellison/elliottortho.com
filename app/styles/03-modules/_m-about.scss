@@ -12,9 +12,15 @@
 .m-about-button {
   @include button($bg: #fff, $radius: 50px);
   border: 2px solid $primary-color;
-  margin-right: $global-margin;
+  &.first {
+    margin-right: 1rem;
+    @media #{$medium-up} {
+      margin-right: $global-margin;
+    }
+  }
   &:hover {
     background-color: $primary-color;
     color: white;
   }
+ 
 }
