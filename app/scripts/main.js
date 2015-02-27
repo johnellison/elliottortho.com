@@ -24,7 +24,7 @@
             var $callNowNumber = $('<p>(303) 791-4411</p>');
             $this
               .after($callNowNumber)
-              .replaceWith('<a href="tel:3037914411" class="button">Call Now</a>');
+              .replaceWith('<a href="tel:3037914411" class="button" data-event="referral">Call Now</a>');
           });
           
         });
