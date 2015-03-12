@@ -7,7 +7,7 @@
   },
   "overrides": {
     "foundation": {
-      "main": ["js/foundation/foundation.js", "js/foundation/foundation.interchange.js", "js/foundation/foundation.topbar.js"]
+      "main": ["js/foundation/foundation.js", "js/foundation/foundation.interchange.js", "js/foundation/foundation.magellan.js", "js/foundation/foundation.topbar.js"]
     }
   }
 }
