@@ -1,7 +1,6 @@
 (function() {
   'use strict';
 
-  //follow
   $("[data-event='referral']").on('click', function(){
     ga('send', {
       'hitType' : 'event',
