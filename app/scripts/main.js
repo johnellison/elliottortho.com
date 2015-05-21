@@ -4,6 +4,16 @@
     // Init foundation
     $(document).foundation();
 
+    // top-bar fixed for tablet up 
+    (function fixTopBar() {
+      var mq = window.matchMedia('all and (max-width: 640px)');
+
+      if (mq.matches) {
+        $('.top-bar').removeClass('fixed');
+      }
+
+    }());
+
     (function viewMore(){
         var $viewMoreParagraph = $('.s-view-more-paragraph'); 
         $viewMoreParagraph.css('display', 'none');

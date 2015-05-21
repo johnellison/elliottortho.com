@@ -27,6 +27,7 @@
 
 .l-welcome-header, .l-welcome-video, .l-welcome-cta, .l-about-family-header {
   @include grid-column(12);
+  margin-bottom: 1.5rem;
 }
 
 .l-welcome {
